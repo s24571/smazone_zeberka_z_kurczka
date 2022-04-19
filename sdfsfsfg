@@ -1,0 +1,114 @@
+public class Zad1
+{
+    public static void main(String[] args)
+    {
+        Square kleks = new Square(2);
+        System.out.println("Kwadrat: ");
+        System.out.println(kleks.getArea());
+        System.out.println(kleks.getPerimeter());
+
+        Circle kolo = new Circle(3);
+        System.out.println("Kołko");
+        System.out.println(kolo.getArea());
+        System.out.println(kolo.getPerimeter());
+
+        Rectangle kek = new Rectangle(2 ,5);
+        System.out.println("Prostokąt ");
+        System.out.println(kek.getArea());
+        System.out.println(kek.getPerimeter());
+
+        Triangle pep = new Triangle(1,1,0);
+        System.out.println("Trójkąt: ");
+        pep.czyDa();
+        System.out.println(pep.getArea());
+        System.out.println(pep.getPerimeter());
+    }
+}
+
+
+public abstract class Shape
+{
+
+    public abstract int getArea();
+
+    public abstract int getPerimeter();
+}
+
+public abstract class Shape
+{
+
+    public abstract int getArea();
+
+    public abstract int getPerimeter();
+}
+
+
+public class Square extends Shape
+{
+    int a;
+    public Square(int a)
+    {
+        this.a= a;
+    }
+
+    @Override
+    public int getArea()
+    {
+       return a*a;
+    }
+    @Override
+    public int getPerimeter()
+    {
+        return 4*a;
+
+    }
+}
+
+public class Rectangle extends Shape
+{
+    int a;
+    int b;
+
+    public Rectangle(int a, int b)
+    {
+        this.a=a;
+        this.b=b;
+    }
+
+    @Override
+    public int getArea()
+    {
+        return a*b;
+    }
+
+    @Override
+    public int getPerimeter()
+    {
+        return 2*a+2*b;
+    }
+}
+
+
+public class Circle extends Shape
+{
+    int r;
+    public Circle(int r)
+    {
+        this.r=r;
+    }
+
+    @Override
+    public int getArea()
+    {
+        return r*r;
+    }
+    @Override
+    public int getPerimeter()
+    {
+        return  2*r;
+    }
+}
+
+
+
+
