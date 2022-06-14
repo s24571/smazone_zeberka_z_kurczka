@@ -1,0 +1,7 @@
+package com.company.zaj14;
+
+public interface Podatek
+{
+    float obliczPodatek();
+
+}
