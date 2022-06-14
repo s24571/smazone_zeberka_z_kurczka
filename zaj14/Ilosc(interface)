@@ -1,0 +1,6 @@
+package com.company.zaj14;
+
+public interface Ilosc
+{
+    int ile();
+}
