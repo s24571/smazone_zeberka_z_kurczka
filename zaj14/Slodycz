@@ -1,0 +1,31 @@
+package com.company.zaj14;
+
+import java.util.Random;
+
+public class Slodycz implements Podatek, Ilosc
+{
+    Random random = new Random();
+    String Nazwa;
+    float cena;
+
+    public Slodycz(String Nazwa, int cena)
+    {
+        this.cena = cena;
+        this.Nazwa = Nazwa;
+    }
+
+
+    @Override
+    public float obliczPodatek()
+    {
+        cena = (float) (cena + cena * 0.08
+        );
+        return cena;
+    }
+
+    @Override
+    public int ile()
+    {
+        return random.nextInt(14);
+    }
+}
