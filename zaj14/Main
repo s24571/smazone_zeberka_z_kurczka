@@ -1,0 +1,30 @@
+package com.company.zaj14;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Warzywo salata = new Warzywo("Salata", 8);
+        Warzywo avocado = new Warzywo("avocado", 10);
+        Warzywo pomidorek = new Warzywo("Pomidorek", 5);
+
+        Owoc jabko = new Owoc("jabko", 5);
+        Owoc gruszka = new Owoc("gruszka", 6);
+        Owoc bananana = new Owoc("Banan", 2);
+
+        Mienso zeberkaKurczaka = new Mienso("kurczak", 10);
+        Mienso miesnoo =new Mienso("miensoo", 12);
+        Mienso dobreMienso = new Mienso("Dobre Mienso", 20);
+
+        Nabial melko = new Nabial("melko", 10);
+        Nabial ser = new Nabial("ser", 9);
+        Nabial bialySer = new Nabial("Bialy ser", 10);
+
+        Slodycz czekolada = new Slodycz("czekolada", 8);
+        Slodycz baton = new Slodycz("baton", 6);
+        Slodycz lizak = new Slodycz("lizak", 2);
+
+        System.out.println(avocado.obliczPodatek());
+        System.out.println(avocado.ile());
+    }
+}
