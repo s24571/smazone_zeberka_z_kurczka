@@ -1,0 +1,29 @@
+package com.company.zaj14;
+
+import java.util.Random;
+
+public class Nabial implements Podatek, Ilosc
+{
+    Random random = new Random();
+    String Nazwa;
+    float cena;
+
+    public Nabial(String Nazwa, int cena)
+    {
+        this.cena = cena;
+        this.Nazwa = Nazwa;
+    }
+
+    @Override
+    public float obliczPodatek()
+    {
+        cena = (float) (cena + cena * 0.05);
+        return cena;
+    }
+
+    @Override
+    public int ile()
+    {
+        return random.nextInt(23);
+    }
+}
